@@ -1,11 +1,17 @@
 /*CMD
   command: /srr
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: 
-  answer: 
-  keyboard: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
@@ -17,7 +23,7 @@ function r(){
     return "/more"
   }
 }
-var button = [[{text: "Version 2.0(latest)", callback_data: "/srrprev2.0"}],[{text: "Version 1.0.2", callback_data: "/srrprev1.0.2"}],[{text: "Version 0.5", callback_data: "/srrprev0.5"}],[{text: "Back🔙", callback_data: r()}]]
+var button = [[{text: "Version 2.1(latest)", callback_data: "/srrprev2.1"}],[{text: "Version 2.0", callback_data: "/srrprev2.0"}],[{text: "Version 1.0.2", callback_data: "/srrprev1.0.2"}],[{text: "Version 0.5", callback_data: "/srrprev0.5"}],[{text: "Back🔙", callback_data: r()}]]
 
 Api.editMessageText({
 message_id: request.message.message_id,

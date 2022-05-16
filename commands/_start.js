@@ -39,7 +39,7 @@ function beur(){
 return {inline_keyboard: [[{text: "Search Movie🎞️ (Title)", callback_data: "/searchtitle"}], [{text: "Settings⚙️", callback_data: "/settings"},  {text: "Stats📊", callback_data: "/stats"}], [{text: "⚡More⚡", callback_data: "/more"}, {text: "Close🚪", callback_data: "/close"}]]}
 }}
 
-var note = User.getProperty("New DB3")
+var note = User.getProperty("New DB2")
 
 if(!note){
   
@@ -55,7 +55,7 @@ Libs.ResourcesLib.anotherUserRes("money", user.telegramid).add(10)
 User.setProperty("pubkey", "Key🔑 1", "string")
 User.setProperty("Full Menu", "☑️", "string")
 User.setProperty("Full Menu1", "☑️", "string")
-User.setProperty("New DB3", chat.chatid, "string")
+User.setProperty("New DB2", chat.chatid, "string")
 User.setProperty("Yes", "✅", "string")
 User.setProperty("format", "🔘Default", "string")
 User.setProperty("Pic", "✅", "string")
